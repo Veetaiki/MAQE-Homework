@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQE Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="forum-container">
+    </div>
+
+    <script id="forum-template" type="text/x-handlebars-template">
+        {{#each posts}}
+        <div class="post">
+            <div class="post-header">{{title}} by Author #{{author_id}} on {{created_at}}</div>
+            <div class="post-content">
+                <img src="{{image_url}}" alt="Post image">
+                <p>{{body}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
