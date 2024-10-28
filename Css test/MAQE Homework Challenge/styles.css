@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #a1d0e6, #70a4d6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
+    box-shadow: 0 0 0 5px #ffffff, 
+                0 0 0 10px #a1d0e6; 
+    border: 0px solid white;
+    z-index: 1;
+}
+
+.line {
+    position: absolute;
+    height: 10px;
+    width: 150%; 
+    background-color: #2d2d2d;
+    top: 50%; 
+    left: -10%; 
+    z-index: 0; 
+    border-radius: 5px;
+}
+.flip {
+    transform: rotatey(180deg); 
+    transform: rotate(180deg); 
+    
+}
+
